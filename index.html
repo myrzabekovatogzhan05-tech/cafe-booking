@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бронь в нашем кафе</title>
+  </head>
+  <body>
+    <header>
+      <h1>Забронируйте столик а нашем кафе</h1>
+      <nav>
+        <a href="#about">О нас</a>
+        <a href="#adress">Наш адрес</a>
+        <a href="#booking" title="Как забронировать">Как забронировать</a>
+      </nav>
+      <img src="/images/cafe.webp" alt="Кафе" />
+    </header>
+    <main>
+      <section id="about">
+        <h2>О нас</h2>
+        <h3>Место, где уютно всей семье!</h3>
+        <p>
+          Добро пожаловать в наше семейное кафе — пространство тепла, уюта и
+          вкусных моментов! Мы создали место, где каждый гость чувствует себя
+          как дома. Здесь можно собраться всей семьёй, провести время с
+          друзьями, отметить особенный праздник или просто насладиться вкусной
+          едой в приятной атмосфере. В нашем кафе вас ждут аппетитные блюда,
+          заботливое обслуживание и уютная обстановка. Мы уделяем внимание
+          каждой детали, чтобы взрослые могли отдохнуть, а маленькие гости —
+          радоваться каждому моменту. Наше кафе — это больше, чем просто вкусная
+          еда. Это место, где собираются близкие, звучит смех и рождаются тёплые
+          воспоминания.
+        </p>
+      </section>
+      <section id="adress">
+        <h2>Мы находимся по адресу:</h2>
+        <h3>Туран 55. Вход со строны "Астана Арены"</h3>
+      </section>
+      <section id="booking">
+        <h2>Как забронировать столик</h2>
+        <h3>Заполните данную форму:</h3>
+        <form>
+          <div>
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="phone">Ваш телефон:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div>
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div>
+            <label for="date">Дата бронирования:</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div>
+            <label for="time">Время бронирования:</label>
+            <input type="time" id="time" name="time" required />
+          </div>
+          <div>
+            <label for="number">Количество человек:</label>
+            <input type="number" id="number" name="number" min="1" />
+          </div>
+          <p>Выберите один из вариантов:</p>
+          <div>
+            <label for="reason">Просто поужинать</label>
+            <input type="radio" id="reason" name="reason" value="reason" />
+          </div>
+          <div>
+            <label for="reason">День рождения</label>
+            <input type="radio" id="reason" name="reason" value="reason" />
+          </div>
+          <div>
+            <label for="reason">Деловая встреча</label>
+            <input type="radio" id="reason" name="reason" value="reason" />
+          </div>
+          <div>
+            <label for="reason">Свидание</label>
+            <input type="radio" id="reason" name="reason" value="reason" />
+          </div>
+          <p>Где сидеть:</p>
+          <div>
+            <label for="place">Зал</label>
+            <input type="radio" id="place" name="place" value="place" />
+          </div>
+          <div>
+            <label for="vip">VIP room</label>
+            <input type="radio" id="vip" name="place" value="place" />
+          </div>
+          <div>
+            <label for="terrace">На террасе</label>
+            <input type="radio" id="terrace" name="place" value="place" />
+          </div>
+          <p>Ваши пожелания:</p>
+          <div>
+            <label for="wishes">Детский стульчик</label>
+            <input type="checkbox" id="wishes" />
+          </div>
+          <div>
+            <label for="wishes">Столик у окна</label>
+            <input type="checkbox" id="wishes" />
+          </div>
+          <div>
+            <label for="wishes">Торт от кафе</label>
+            <input type="checkbox" id="wishes" />
+          </div>
+          <div>
+            <label type="comment">Комментарий:</label>
+            <textarea id="comment" name="comment"></textarea>
+          </div>
+          <div>
+            <label for="agreement">Я согласен с условиями бронирования</label>
+            <input type="checkbox" id="agreement" required />
+          </div>
+          <button type="submit">Забронировать</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>2026, Togzhan cafe</p>
+    </footer>
+  </body>
+</html>
